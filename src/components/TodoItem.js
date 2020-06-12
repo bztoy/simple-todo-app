@@ -1,20 +1,5 @@
 import React from 'react'
 
-// function TodoItem (props) {
-//   return (
-//     <div>
-//       <li>
-//         <input
-//           type='checkbox'
-//           checked={props.todo.completed}
-//           onChange={() => props.onHandleChangeProps()}
-//         />
-//         {props.todo.title}
-//       </li>
-//     </div>
-//   )
-// }
-
 class TodoItem extends React.Component {
   render () {
     const { todo, onHandleChangeProps, onHandleDelTodo } = this.props
@@ -25,7 +10,7 @@ class TodoItem extends React.Component {
       fontStyle: 'italic',
       color: '#d35e0f',
       opacity: 0.4,
-      textDecoration: 'line-through',
+      textDecoration: 'line-through'
     }
 
     return (
